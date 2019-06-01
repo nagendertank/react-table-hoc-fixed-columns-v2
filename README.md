@@ -31,7 +31,7 @@ Documentation of previous v1 [here](https://github.com/GuillaumeJasmin/react-tab
 ## Install
 
 ```bash
-npm install react-table-hoc-fixed-columns --save
+npm install react-table-hoc-fixed-columns-v2 --save
 ```
 
 
@@ -43,8 +43,8 @@ It's really simple: add `fixed` property to your columns with value `left` and `
 ```js
 import ReactTable from 'react-table';
 import "react-table/react-table.css";
-import withFixedColumns from 'react-table-hoc-fixed-columns';
-import 'react-table-hoc-fixed-columns/lib/styles.css' // important: this line must be placed after react-table css import
+import withFixedColumns from 'react-table-hoc-fixed-columns-v2';
+import 'react-table-hoc-fixed-columns-v2/lib/styles.css' // important: this line must be placed after react-table css import
 
 const ReactTableFixedColumns = withFixedColumns(ReactTable);
 ...
@@ -82,8 +82,8 @@ Fixed columns also work with groups.
 ```js
 import ReactTable from 'react-table';
 import "react-table/react-table.css";
-import withFixedColumns from 'react-table-hoc-fixed-columns';
-import 'react-table-hoc-fixed-columns/lib/styles.css' // important: this line must be placed after react-table css import
+import withFixedColumns from 'react-table-hoc-fixed-columns-v2';
+import 'react-table-hoc-fixed-columns-v2/lib/styles.css' // important: this line must be placed after react-table css import
 
 const ReactTableFixedColumns = withFixedColumns(ReactTable);
 ...
@@ -140,7 +140,7 @@ If the browser doesn't support `position: sticky`, there is a fallback with `tra
 You can force to use only legacy browsers version:
 
 ```js
-import { withFixedColumnsScrollEvent } from 'react-table-hoc-fixed-columns'
+import { withFixedColumnsScrollEvent } from 'react-table-hoc-fixed-columns-v2'
 import ReactTable from 'react-table';
 
 const Table = withFixedColumnsScrollEvent(ReactTable);
@@ -149,7 +149,7 @@ const Table = withFixedColumnsScrollEvent(ReactTable);
 or also force only sticky position version:
 
 ```js
-import { withFixedColumnsStickyPosition } from 'react-table-hoc-fixed-columns'
+import { withFixedColumnsStickyPosition } from 'react-table-hoc-fixed-columns-v2'
 ...
 ```
 
@@ -183,3 +183,7 @@ Follow these steps to get started developing :
 * `npm run lib:watch` - Transpile the `src/lib` folder in watch mode
 * `npm run demo` - start a development server with the demo website based on the `src/demo` folder.
 * Go to http://127.0.0.1:8080 to see the demo in action. Whenever you change the code in either src/lib or src/demo, the page will automatically update.
+
+## Credits
+ Plugin based on 
+ - [react-table-hoc-fixed-columns](https://github.com/GuillaumeJasmin/react-table-hoc-fixed-columns) create by [Guillaume Jasmin](https://github.com/GuillaumeJasmin).
