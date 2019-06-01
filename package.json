@@ -1,0 +1,57 @@
+{
+  "name": "react-table-hoc-fixed-columns-v2",
+  "version": "1.0.0",
+  "description": "ReactTable HOC for fixed columns with fix jest failure",
+  "main": "lib/index.js",
+  "scripts": {
+    "lib": "rm -rf lib && eslint src/lib/index.js && babel src/lib -d lib --copy-files",
+    "lib:watch": "babel src/lib -w -d lib --copy-files",
+    "demo": "webpack-dev-server"
+  },
+  "publishConfig": {
+    "tag": "next"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "peerDependencies": {
+    "react": "^15.3.0 || ^16.2.0",
+    "react-dom": "^15.3.0 || ^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.37",
+    "@babel/core": "^7.0.0-beta.37",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.37",
+    "@babel/preset-react": "^7.0.0-beta.37",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^0.28.8",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "html-webpack-plugin": "^2.30.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-table": "^6.9.0",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "author": "Nagendra Tank",
+  "homepage": "https://github.com/nagendratank/react-table-hoc-fixed-columns-v2.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nagendratank/react-table-hoc-fixed-columns-v2.git"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "shortid": "^2.2.14"
+  }
+}
