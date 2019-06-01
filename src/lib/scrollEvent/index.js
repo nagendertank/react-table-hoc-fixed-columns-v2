@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import shortid from 'shortid';
 import cx from 'classnames';
 import { isLeftFixed, isRightFixed, sortColumns, checkErrors, findPrevColumnNotHidden, findNextColumnNotHidden } from '../helpers';
 
@@ -26,7 +25,7 @@ export default (ReactTable) => {
 
       checkErrors(this.props.columns);
 
-      this.uniqClassName = this.props.uniqClassName || ('rthfc-'+shortid.generate());
+      this.uniqClassName = this.props.uniqClassName || ('rthfc');
 
       this.onChangePropertyList = {
         onResizedChange: this.onChangeProperty('onResizedChange'),
