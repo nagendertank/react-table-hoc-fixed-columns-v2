@@ -47,7 +47,7 @@
     "webpack-dev-server": "^2.11.0"
   },
   "author": "Nagendra Tank",
-  "homepage": "https://github.com/nagendratank/react-table-hoc-fixed-columns-v2.git",
+  "homepage": "https://github.com/nagendertank/react-table-hoc-fixed-columns-v2.git",
   "repository": {
     "type": "git",
     "url": "git@github.com:nagendratank/react-table-hoc-fixed-columns-v2.git"
